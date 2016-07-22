@@ -1,18 +1,22 @@
 {
   "name": "legistar-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Legistar API client.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel ./src --out-dir ./lib",
+    "prepublish": "npm run compile"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0"
+  },
+  "dependencies": {
     "blueimp-md5": "^2.3.0",
     "koa-compose": "^3.1.0",
     "lodash": "^4.13.1",
