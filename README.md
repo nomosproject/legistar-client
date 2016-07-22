@@ -1,4 +1,4 @@
-# legistar-js
+# legistar-client
 
 An ES6 client for Legistar APIs.
 
