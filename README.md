@@ -4,10 +4,12 @@ An ES6 client for Legistar APIs.
 
 ## Installation
 
+`npm install legistar-client`
+
 ## Usage
 
 ```
-import LegistarClient from 'legistar'
+import LegistarClient from 'legistar-client'
 const legistar = new LegistarClient('Seattle')
 
 async function main () {
